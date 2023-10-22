@@ -1,6 +1,6 @@
 cabal-version:       >=1.10
 name:                peano
-version:             0.2.0.0
+version:             0.1.0.2
 synopsis:            Peano numbers
 description:         Lazy unary natural numbers.
 license:             BSD3

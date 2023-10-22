@@ -6,11 +6,14 @@ import Data.Ix (Ix (..))
 import Numeric.Natural
 import Text.Read (Read (..))
 
--- | The natural numbers
-data Peano = Zero | Succ Peano deriving (Eq, Ord, Typeable, Data)
+import Data.Data       ( Data, Typeable )
+import Data.Ix         ( Ix( index, inRange, range, rangeSize ) )
 
-instance Show Peano where show = show . (fromIntegral :: Peano -> Natural)
-instance Read Peano where readPrec = (fromIntegral :: Natural -> Peano) <$> readPrec
+-- | The natural numbers in (lazy) unary notation.
+data Peano
+  = Zero
+  | Succ Peano
+  deriving (Eq, Ord, Typeable, Data, Read, Show)
 
 instance Enum Peano where
     succ = Succ
