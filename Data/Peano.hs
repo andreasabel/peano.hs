@@ -2,14 +2,14 @@
 
 module Data.Peano ( Peano (Zero, Succ), infinity ) where
 
-import Data.Data       ( Data, Typeable )
+import Data.Data       ( Data )
 import Data.Ix         ( Ix( index, inRange, range, rangeSize ) )
 
 -- | The natural numbers in (lazy) unary notation.
 data Peano
   = Zero
   | Succ Peano
-  deriving (Eq, Ord, Typeable, Data, Read, Show)
+  deriving (Eq, Ord, Data, Read, Show)
 
 instance Enum Peano where
     succ = Succ

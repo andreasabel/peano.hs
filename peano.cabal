@@ -1,6 +1,6 @@
 cabal-version:       1.18
 name:                peano
-version:             0.1.0.2
+version:             0.1.0.3
 synopsis:            Peano numbers
 description:         Lazy unary natural numbers.
 license:             BSD3
@@ -11,6 +11,7 @@ category:            Data, Math
 build-type:          Simple
 
 tested-with:
+  GHC == 9.14.1
   GHC == 9.12.2
   GHC == 9.10.2
   GHC == 9.8.4

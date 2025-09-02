@@ -1,3 +1,11 @@
+0.1.0.3
+-------
+
+_Andreas Abel, 2025-09-02_
+
+* Remove obsolete `deriving Typeable`.
+* Tested with GHC 8.0 - 9.14.1 alpha1.
+
 0.1.0.2
 -------
 
