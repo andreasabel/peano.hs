@@ -1,15 +1,16 @@
 -- | See 'Peano'.
-
+{-# LANGUAGE DeriveGeneric #-}
 module Data.Peano ( Peano (Zero, Succ), infinity ) where
 
 import Data.Data       ( Data )
 import Data.Ix         ( Ix( index, inRange, range, rangeSize ) )
+import GHC.Generics    ( Generic )
 
 -- | The natural numbers in (lazy) unary notation.
 data Peano
   = Zero
   | Succ Peano
-  deriving (Eq, Ord, Data, Read, Show)
+  deriving (Eq, Ord, Data, Read, Show, Generic)
 
 instance Enum Peano where
     succ = Succ
