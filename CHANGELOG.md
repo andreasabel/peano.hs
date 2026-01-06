@@ -1,3 +1,11 @@
+0.1.1.0
+-------
+
+_Andreas Abel, 2026-01-06_
+
+* Add `deriving Generic` (Olaf Klinke, [PR #5](https://github.com/andreasabel/peano.hs/pull/5)).
+* Tested with GHC 8.0 - 9.14.1.
+
 0.1.0.3
 -------
 
